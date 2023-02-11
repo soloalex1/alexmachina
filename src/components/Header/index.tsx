@@ -6,14 +6,22 @@ const Header: React.FC = () => {
 	return (
 		<S.HeaderContainer>
 			<h1>Alexandre Machado</h1>
-			<nav>
+			<S.Navbar>
 				<ul>
-					<li>About me</li>
-					<li>Projects</li>
-					<li>Work Experience</li>
-					<li>Contact</li>
+					<li>
+						<a href="#about">About me</a>
+					</li>
+					<li>
+						<a href="#projects">Projects</a>
+					</li>
+					<li>
+						<a href="#experience">Work Experience</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
 				</ul>
-			</nav>
+			</S.Navbar>
 		</S.HeaderContainer>
 	);
 };

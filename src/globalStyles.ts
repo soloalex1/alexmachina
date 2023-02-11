@@ -1,11 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  body {
+  html, body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    background: '#1E1E1E';
-    font-family: 'JetBrains Mono', sans-serif;
+    overflow-x: hidden;
+    background-color: #1E1E1E;
+    color: #EEE;
+    font-family: 'Arial', source-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 `;
 

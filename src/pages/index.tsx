@@ -13,8 +13,6 @@ const IndexPage: React.FC<PageProps> = () => {
 	);
 };
 
-export default IndexPage;
-
 export const Head: HeadFC = () => (
 	<>
 		<title>Alexandre Machado</title>
@@ -23,10 +21,16 @@ export const Head: HeadFC = () => (
 		<meta name="description" content="Front-end Developer from Brazil." />
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap"
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossOrigin=""
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap"
 			rel="stylesheet"
 		/>
 	</>
 );
+
+export default IndexPage;

@@ -2,15 +2,16 @@ import React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 
 import Header from "../components/Header";
-import Table from "../components/Table";
+import Container from "../components/Container";
 import GlobalStyle from "../globalStyles";
 
 const IndexPage: React.FC<PageProps> = () => {
 	return (
 		<>
 			<GlobalStyle />
-			<Header />
-			<Table />
+			<Container>
+				<Header />
+			</Container>
 		</>
 	);
 };

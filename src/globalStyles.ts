@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   html, body {
@@ -11,6 +11,11 @@ const GlobalStyle = createGlobalStyle`
     color: #EEE;
     font-family: "IBM Plex Mono", monospace;
   }
+`;
+
+export const FullBleed = css`
+	width: 100%;
+	grid-column: 1 / 4;
 `;
 
 export default GlobalStyle;

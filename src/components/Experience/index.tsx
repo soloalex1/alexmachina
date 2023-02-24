@@ -1,32 +1,29 @@
 import React from "react";
 
-import List from "../List";
+import * as S from "./styles";
+
+import { EXPERIENCE_ITEMS } from "../../constants/lists";
 
 const ExperienceSection: React.FC = () => {
-	const EXPERIENCE_ITEMS = [
-		{
-			role: "Junior Front-end Developer",
-			company: "Agenda Edu",
-			link: "https://agendaedu.com/",
-		},
-		{
-			role: "Front-end Developer",
-			company: "Statix",
-			link: "https://statix.com.br/",
-		},
-		{
-			role: "Web Developer",
-			company: "Container Digital",
-			link: "http://www.codijr.ufc.br/",
-		},
-		{
-			role: "Front-end Development Intern",
-			company: "LME",
-			link: "https://lme.virtual.ufc.br/",
-		},
-	];
-
-	return <List title="Experience" items={EXPERIENCE_ITEMS} />;
+	return (
+		<section>
+			<S.ListComponent>
+				<li>
+					<b>Experience</b>
+				</li>
+				{EXPERIENCE_ITEMS.map(({ role, company, link }) => {
+					return (
+						<li>
+							<span>{role}</span>
+							<a href={link} target="_blank">
+								{company}
+							</a>
+						</li>
+					);
+				})}
+			</S.ListComponent>
+		</section>
+	);
 };
 
 export default ExperienceSection;

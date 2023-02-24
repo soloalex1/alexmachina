@@ -6,22 +6,15 @@ const Header: React.FC = () => {
 	return (
 		<S.HeaderContainer>
 			<h1>Alexandre Machado</h1>
-			<S.Navbar>
-				<ul>
-					<li>
-						<a href="#about">About me</a>
-					</li>
-					<li>
-						<a href="#projects">Projects</a>
-					</li>
-					<li>
-						<a href="#experience">Work Experience</a>
-					</li>
-					<li>
-						<a href="#contact">Contact</a>
-					</li>
-				</ul>
-			</S.Navbar>
+
+			<aside>
+				<h6>amch.smd@gmail.com</h6>
+				<h6>
+					<a href="https://github.com/soloalex1" target="_blank">
+						github.com/soloalex1
+					</a>
+				</h6>
+			</aside>
 		</S.HeaderContainer>
 	);
 };

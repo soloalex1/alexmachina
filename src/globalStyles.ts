@@ -15,7 +15,33 @@ const GlobalStyle = createGlobalStyle`
 
 export const FullBleed = css`
 	width: 100%;
-	grid-column: 1 / 4;
+	grid-column: 1 / -1;
+`;
+
+export const LinkStyles = css`
+	outline: none;
+	/* text-decoration: none; */
+	padding: 2px 1px 0;
+
+	&:link {
+		color: #eee;
+	}
+
+	&:visited {
+		color: #faf20c;
+	}
+
+	&:focus,
+	&:hover {
+		border-bottom: 1px solid;
+		color: #1e1e1e;
+		background: #faf20c;
+	}
+
+	&:active {
+		background: #265301;
+		color: #cdfeaa;
+	}
 `;
 
 export default GlobalStyle;

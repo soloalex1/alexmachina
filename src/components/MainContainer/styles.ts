@@ -6,5 +6,6 @@ export const Main = styled.main`
 
 	> * {
 		grid-column: 2;
+		cursor: default;
 	}
 `;

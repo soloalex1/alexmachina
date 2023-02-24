@@ -4,6 +4,7 @@ import type { HeadFC, PageProps } from "gatsby";
 import Header from "../components/Header";
 import MainContainer from "../components/MainContainer";
 import GlobalStyle from "../globalStyles";
+import ExperienceSection from "../components/Experience";
 
 const IndexPage: React.FC<PageProps> = () => {
 	return (
@@ -11,6 +12,7 @@ const IndexPage: React.FC<PageProps> = () => {
 			<GlobalStyle />
 			<MainContainer>
 				<Header />
+				<ExperienceSection />
 			</MainContainer>
 		</>
 	);

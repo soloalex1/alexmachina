@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { LinkStyles } from "../../globalStyles";
 
 export const HeaderContainer = styled.header`
 	display: flex;
@@ -14,6 +13,11 @@ export const HeaderContainer = styled.header`
 		font-weight: 400;
 		font-size: 24px;
 		letter-spacing: 2.6px;
+
+		@media (max-width: 768px) {
+			font-size: 16px;
+			font-weight: 500;
+		}
 	}
 
 	aside {
@@ -21,13 +25,11 @@ export const HeaderContainer = styled.header`
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: center;
+		align-items: flex-end;
 
 		> * {
 			margin: 4px 0;
-		}
-
-		a {
-			${LinkStyles};
+			font-weight: 500;
 		}
 	}
 `;

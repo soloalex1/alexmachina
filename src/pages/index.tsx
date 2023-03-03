@@ -6,15 +6,23 @@ import Table from "../components/Table";
 import MainContainer from "../components/MainContainer";
 import GlobalStyle from "../globalStyles";
 
-import { EXPERIENCE_ITEMS } from "../constants/lists";
+import {
+	DESCRIPTION_ITEMS,
+	EXPERIENCE_ITEMS,
+	PRESENT_ITEMS,
+} from "../constants/lists";
 
 const IndexPage: React.FC<PageProps> = () => {
 	return (
 		<>
 			<GlobalStyle />
 			<MainContainer>
-				<Header />
-				<Table title="Experience" list={EXPERIENCE_ITEMS} />
+				<main>
+					<Header />
+					<Table title="About me" list={DESCRIPTION_ITEMS} />
+					<Table title="Experience" list={EXPERIENCE_ITEMS} />
+					<Table title="Present" list={PRESENT_ITEMS} />
+				</main>
 			</MainContainer>
 		</>
 	);

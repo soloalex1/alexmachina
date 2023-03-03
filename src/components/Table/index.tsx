@@ -5,9 +5,9 @@ import * as S from "./styles";
 type TableProps = {
 	title: string;
 	list: {
-		link: string;
 		label: string;
-		location: string;
+		link: string | null;
+		location: string | null;
 	}[];
 };
 
@@ -22,9 +22,11 @@ const Table: React.FC<TableProps> = ({ title, list }) => {
 					return (
 						<li>
 							<span>{label}</span>
-							<a href={link} target="_blank">
-								{location}
-							</a>
+							{location && link && (
+								<a href={link} target="_blank">
+									{location}
+								</a>
+							)}
 						</li>
 					);
 				})}

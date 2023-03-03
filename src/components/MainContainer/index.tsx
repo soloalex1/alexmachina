@@ -3,7 +3,7 @@ import React from "react";
 import * as S from "./styles";
 
 type ContainerProps = {
-	children: JSX.Element[];
+	children: JSX.Element[] | JSX.Element;
 };
 
 const Container: React.FC<ContainerProps> = ({ children }) => {

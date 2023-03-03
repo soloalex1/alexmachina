@@ -1,65 +1,35 @@
-import styled, { css } from 'styled-components'
-
-const borderStyles = "4px solid white"
+import styled, { css } from "styled-components";
 
 export const HeaderContainer = styled.header`
-  display: flex;
-  align-items: center;
-  padding: 0 24px;
-  height: 60px;
-  background-color: #1E1E1E;
-  border: ${borderStyles};
-  border-left: none;
-  border-right: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 24px;
+	height: 60px;
+	background-color: #1e1e1e;
+	border-bottom: 4px solid white;
 
-  h1 {
-    font-weight: 400;
-    font-size: 24px;
+	h1 {
+		font-weight: 400;
+		font-size: 24px;
+		letter-spacing: 2.6px;
 
-    letter-spacing: 2.6px;
-    cursor: default;
-  }
+		@media (max-width: 768px) {
+			font-size: 16px;
+			font-weight: 500;
+		}
+	}
 
-  nav {
-    height: 100%;
-    max-width: 75%;
-    margin: 0 16px;
-    display: flex;
-    align-items: center;
-  }
+	aside {
+		height: 100%;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: flex-end;
+
+		> * {
+			margin: 4px 0;
+			font-weight: 500;
+		}
+	}
 `;
-
-export const Navbar = styled.nav`
-  height: 100%;
-  max-width: 75%;
-  margin: 0 16px;
-
-  ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    height: 100%;
-
-    li {
-      padding: 0 16px;
-      float: left;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      border-left: ${borderStyles};
-
-      &:last-of-type {
-        border-right: ${borderStyles};
-      }
-
-      a {
-        font-size: 16px;
-        letter-spacing: 1.6px;
-        text-decoration: none;
-        color: inherit;
-      }
-    }
-  }
-
-`

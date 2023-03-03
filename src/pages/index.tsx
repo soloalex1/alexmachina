@@ -3,14 +3,27 @@ import type { HeadFC, PageProps } from "gatsby";
 
 import Header from "../components/Header";
 import Table from "../components/Table";
+import MainContainer from "../components/MainContainer";
 import GlobalStyle from "../globalStyles";
+
+import {
+	DESCRIPTION_ITEMS,
+	EXPERIENCE_ITEMS,
+	PRESENT_ITEMS,
+} from "../constants/lists";
 
 const IndexPage: React.FC<PageProps> = () => {
 	return (
 		<>
 			<GlobalStyle />
-			<Header />
-			<Table />
+			<MainContainer>
+				<main>
+					<Header />
+					<Table title="About me" list={DESCRIPTION_ITEMS} />
+					<Table title="Experience" list={EXPERIENCE_ITEMS} />
+					<Table title="Present" list={PRESENT_ITEMS} />
+				</main>
+			</MainContainer>
 		</>
 	);
 };

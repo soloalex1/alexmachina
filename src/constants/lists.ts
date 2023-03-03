@@ -1,35 +1,35 @@
 export const EXPERIENCE_ITEMS = [
 	{
-		role: "Student",
-		company: "Universidade Federal do Ceará",
+		label: "Student",
+		location: "Universidade Federal do Ceará",
 		link: "https://ufc.br/",
 	},
 	{
-		role: "Junior Front-end Developer",
-		company: "Agenda Edu",
+		label: "Front-end Developer",
+		location: "Agenda Edu",
 		link: "https://agendaedu.com/",
 	},
 	{
-		role: "Front-end Developer",
-		company: "Statix",
+		label: "Front-end Developer",
+		location: "Statix",
 		link: "https://statix.com.br/",
 	},
 	{
-		role: "Web Developer",
-		company: "Container Digital",
+		label: "Web Developer",
+		location: "Container Digital",
 		link: "http://www.codijr.ufc.br/",
 	},
 	{
-		role: "Front-end Development Intern",
-		company: "LME",
+		label: "Front-end Development Intern",
+		location: "LME",
 		link: "https://lme.virtual.ufc.br/",
 	},
 ];
 
 export const PRESENT_ITEMS = [
 	{
-		role: "Junior Front-end Developer",
-		company: "Agenda Edu",
+		label: "Front-end Developer",
+		location: "Agenda Edu",
 		link: "https://agendaedu.com/",
 	},
 ];

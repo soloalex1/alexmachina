@@ -2,9 +2,11 @@ import React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 
 import Header from "../components/Header";
+import Table from "../components/Table";
 import MainContainer from "../components/MainContainer";
 import GlobalStyle from "../globalStyles";
-import ExperienceSection from "../components/Experience";
+
+import { EXPERIENCE_ITEMS } from "../constants/lists";
 
 const IndexPage: React.FC<PageProps> = () => {
 	return (
@@ -12,7 +14,7 @@ const IndexPage: React.FC<PageProps> = () => {
 			<GlobalStyle />
 			<MainContainer>
 				<Header />
-				<ExperienceSection />
+				<Table title="Experience" list={EXPERIENCE_ITEMS} />
 			</MainContainer>
 		</>
 	);

@@ -3,6 +3,7 @@ import { createGlobalStyle, css } from "styled-components";
 const LinkStyles = css`
 	outline: none;
 	padding: 2px 1px 0;
+	border-bottom: 1px solid transparent;
 
 	&:link {
 		color: #eee;
@@ -14,7 +15,6 @@ const LinkStyles = css`
 
 	&:focus,
 	&:hover {
-		border-bottom: 1px solid;
 		color: #1e1e1e;
 		background: #faf20c;
 	}

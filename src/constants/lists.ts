@@ -35,8 +35,7 @@ export const DESCRIPTION_ITEMS = [
 			"I model and build simple, safe and maintanable components and systems",
 	},
 	{
-		label:
-			"I work as a developer who has a strong UI design educational background",
+		label: "I work as a developer who has a strong UI design knowledge",
 	},
 	{
 		label:

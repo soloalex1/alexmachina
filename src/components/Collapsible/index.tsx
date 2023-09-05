@@ -1,13 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
+import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 
 import * as S from "./styles";
 
-type TableItemProps = {
+type CollapsibleProps = {
 	label: string;
 	children: JSX.Element | JSX.Element[];
 };
 
-export const TableItem = ({ label, children }: TableItemProps) => {
+export const Collapsible = ({ label, children }: CollapsibleProps) => {
 	const contentRef = useRef(null);
 	const [open, setOpen] = useState(false);
 	const [height, setHeight] = useState(0);
@@ -25,7 +26,10 @@ export const TableItem = ({ label, children }: TableItemProps) => {
 		<section>
 			<S.ItemHeader>
 				<h3>{label}</h3>
-				<button onClick={toggleOpen}>{open ? "hide" : "show"} content</button>
+
+				<S.ItemButton onClick={toggleOpen}>
+					{open ? <SlArrowUp /> : <SlArrowDown />}
+				</S.ItemButton>
 			</S.ItemHeader>
 			<S.CollapsibleContainer height={height}>
 				<div role="content" ref={contentRef} aria-expanded={open}>

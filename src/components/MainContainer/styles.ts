@@ -9,7 +9,7 @@ export const Main = styled.div`
 		cursor: default;
 
 		display: grid;
-		grid-template-columns: 50ch 40ch 30ch;
+		grid-template-columns: 1fr 1fr 30ch;
 		grid-gap: 0 16px;
 
 		header {

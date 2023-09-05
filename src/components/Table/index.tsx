@@ -1,17 +1,14 @@
 import React from "react";
 
 import * as S from "./styles";
+import { TableList } from "../../types";
 
 type TableProps = {
 	title: string;
-	list: {
-		label: string;
-		link: string | null;
-		location: string | null;
-	}[];
+	list: TableList[];
 };
 
-const Table: React.FC<TableProps> = ({ title, list }) => {
+const Table = ({ title, list }: TableProps) => {
 	return (
 		<section>
 			<S.ListComponent>

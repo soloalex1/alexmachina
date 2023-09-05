@@ -10,6 +10,7 @@ import {
 	DESCRIPTION_ITEMS,
 	EXPERIENCE_ITEMS,
 	PRESENT_ITEMS,
+	STACK_ITEMS,
 } from "../constants/lists";
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -22,6 +23,7 @@ const IndexPage: React.FC<PageProps> = () => {
 					<Table title="About me" list={DESCRIPTION_ITEMS} />
 					<Table title="Experience" list={EXPERIENCE_ITEMS} />
 					<Table title="Present" list={PRESENT_ITEMS} />
+					<Table title="Stack" list={STACK_ITEMS} />
 				</main>
 			</MainContainer>
 		</>

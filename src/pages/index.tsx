@@ -12,6 +12,7 @@ import {
 	PRESENT_ITEMS,
 	STACK_ITEMS,
 } from "../constants/lists";
+import { TableItem } from "../components/TableItem";
 
 const IndexPage: React.FC<PageProps> = () => {
 	return (
@@ -20,10 +21,16 @@ const IndexPage: React.FC<PageProps> = () => {
 			<MainContainer>
 				<main>
 					<Header />
-					<Table title="About me" list={DESCRIPTION_ITEMS} />
-					<Table title="Experience" list={EXPERIENCE_ITEMS} />
-					<Table title="Present" list={PRESENT_ITEMS} />
-					<Table title="Stack" list={STACK_ITEMS} />
+					<Table title="about me" list={DESCRIPTION_ITEMS} />
+					<Table title="experience" list={EXPERIENCE_ITEMS} />
+					<Table title="present" list={PRESENT_ITEMS} />
+					<Table title="stack" list={STACK_ITEMS} />
+					<TableItem label="teste">
+						<div>
+							CollapsibleContainerCollapsibleContainerCollapsibleContainer
+							CollapsibleContainer CollapsibleContainer
+						</div>
+					</TableItem>
 				</main>
 			</MainContainer>
 		</>

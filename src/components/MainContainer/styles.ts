@@ -10,9 +10,9 @@ export const Main = styled.div`
 
 		display: grid;
 		grid-template-columns: 1fr 1fr 30ch;
-		grid-gap: 0 16px;
+		gap: 0 24px;
 
-		header {
+		> header {
 			grid-column: 1 / -1;
 		}
 	}

@@ -2,6 +2,7 @@ import React from "react";
 
 import * as S from "./styles";
 import { TableList } from "../../types";
+import { Collapsible } from "../Collapsible";
 
 type TableProps = {
 	title: string;
@@ -11,23 +12,10 @@ type TableProps = {
 const Table = ({ title, list }: TableProps) => {
 	return (
 		<section>
-			<S.ListComponent>
-				<li>
-					<b>{title}</b>
-				</li>
-				{list.map(({ label, location, link }) => {
-					return (
-						<li>
-							<span>{label}</span>
-							{location && link && (
-								<a href={link} target="_blank">
-									{location}
-								</a>
-							)}
-						</li>
-					);
-				})}
-			</S.ListComponent>
+			<h3>{title}</h3>
+			{list.map((entry) => (
+				<Collapsible entry={entry} />
+			))}
 		</section>
 	);
 };

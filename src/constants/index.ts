@@ -38,8 +38,7 @@ export const EXPERIENCE_ITEMS: TableList[] = [
 
 export const PRESENT_ITEMS: TableList[] = [
 	{
-		label: "Open to work :D",
-		location: "Remote",
+		label: "open to remote work",
 	},
 ];
 
@@ -57,7 +56,7 @@ export const DESCRIPTION_ITEMS: TableList[] = [
 			"i have great attention to detail when it comes to implementing layouts and enforcing design system rules",
 	},
 	{
-		label: "i love to study all things about CSS and its ecosystem",
+		label: "i love to study all things about css and its ecosystem",
 	},
 ];
 
@@ -75,5 +74,18 @@ export const STACK_ITEMS: TableList[] = [
 	{
 		label: "with some help, i can manage:",
 		description: "node, express, java, angular, mongodb, ux design",
+	},
+];
+
+export const PROJECT_ITEMS: TableList[] = [
+	{
+		label: "movie list",
+		location: "live",
+		link: "https://lista-filmes-alpha.vercel.app/",
+	},
+	{
+		label: "statix landing page",
+		location: "live",
+		link: "https://statix.com.br/",
 	},
 ];

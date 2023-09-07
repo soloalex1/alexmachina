@@ -3,7 +3,6 @@ import type { HeadFC, PageProps } from "gatsby";
 
 import Header from "../components/Header";
 import Table from "../components/Table";
-import { Collapsible } from "../components/Collapsible";
 import MainContainer from "../components/MainContainer";
 
 import GlobalStyle from "../globalStyles";
@@ -12,8 +11,9 @@ import {
 	DESCRIPTION_ITEMS,
 	EXPERIENCE_ITEMS,
 	PRESENT_ITEMS,
+	PROJECT_ITEMS,
 	STACK_ITEMS,
-} from "../constants/lists";
+} from "../constants";
 
 const IndexPage: React.FC<PageProps> = () => {
 	return (
@@ -24,8 +24,9 @@ const IndexPage: React.FC<PageProps> = () => {
 					<Header />
 					<Table title="about me" list={DESCRIPTION_ITEMS} />
 					<Table title="experience" list={EXPERIENCE_ITEMS} />
-					{/* <Table title="present" list={PRESENT_ITEMS} /> */}
 					<Table title="stack" list={STACK_ITEMS} />
+					<Table title="present" list={PRESENT_ITEMS} />
+					<Table title="projects" list={PROJECT_ITEMS} />
 				</main>
 			</MainContainer>
 		</>

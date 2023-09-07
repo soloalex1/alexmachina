@@ -22,7 +22,7 @@ export const ItemHeader = styled.header`
 	}
 
 	> p {
-		margin: 12px;
+		margin: 12px 0;
 	}
 `;
 

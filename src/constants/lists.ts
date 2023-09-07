@@ -50,14 +50,14 @@ export const DESCRIPTION_ITEMS: TableList[] = [
 	},
 	{
 		label:
-			"i work as a developer who has a strong graphic & UI design knowledge",
+			"i work as a front-end developer who has a strong graphic & ui design knowledge",
 	},
 	{
 		label:
-			"i have great attention to detail, when it comes to implementing layouts and enforcing design system rules",
+			"i have great attention to detail when it comes to implementing layouts and enforcing design system rules",
 	},
 	{
-		label: "i like to study new gimmicks in and outside the stack I know",
+		label: "i love to study all things about CSS and its ecosystem",
 	},
 ];
 
@@ -65,12 +65,12 @@ export const STACK_ITEMS: TableList[] = [
 	{
 		label: "most confident with:",
 		description:
-			" javascript, typescript, react, redux, testing-library, css and most of its frameworks, design prototypes and tools",
+			"javascript, typescript, react, redux, testing-library, css and most of its frameworks, prototyping tools",
 	},
 	{
 		label: "i have good knowledge on:",
 		description:
-			" redux/saga, jest, testing library, gatsby, a11y, tdd, UI libraries (such as bootstrap, mui & ant)",
+			"redux/saga, jest, testing library, gatsby, a11y, tdd, component libraries (such as bootstrap, mui & ant), sql",
 	},
 	{
 		label: "with some help, i can manage:",

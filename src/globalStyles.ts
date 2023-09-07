@@ -36,6 +36,12 @@ const GlobalStyle = createGlobalStyle`
     color: #EEE;
     font-family: "IBM Plex Mono", monospace;
 
+		@media screen and (max-width: 480px) {
+			p, a {
+				font-size: 12px;
+			}
+		}
+
 		a {
 			${LinkStyles};
 		}

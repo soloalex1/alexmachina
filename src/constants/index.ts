@@ -65,6 +65,7 @@ export const STACK_ITEMS: TableList[] = [
 		label: "most confident with:",
 		description:
 			"javascript, typescript, react, redux, testing-library, css and most of its frameworks, prototyping tools",
+		expanded: true,
 	},
 	{
 		label: "i have good knowledge on:",

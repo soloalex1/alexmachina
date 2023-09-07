@@ -3,4 +3,5 @@ export type TableList = {
 	link?: string;
 	location?: string;
 	description?: string;
+	expanded?: boolean;
 };

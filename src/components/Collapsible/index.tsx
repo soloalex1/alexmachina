@@ -10,10 +10,10 @@ type CollapsibleProps = {
 };
 
 const Collapsible = ({
-	entry: { label, link, description, location },
+	entry: { label, link, description, location, expanded = false },
 }: CollapsibleProps) => {
 	const contentRef = useRef(null);
-	const [open, setOpen] = useState(false);
+	const [open, setOpen] = useState(expanded);
 	const [height, setHeight] = useState(0);
 
 	const toggleOpen = () => {

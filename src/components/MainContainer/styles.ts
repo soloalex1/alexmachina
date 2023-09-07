@@ -12,6 +12,10 @@ export const Main = styled.div`
 		grid-template-columns: 1fr 1fr 30ch;
 		gap: 0 24px;
 
+		@media screen and (max-width: 480px) {
+			grid-template-columns: 1fr;
+		}
+
 		> header {
 			grid-column: 1 / -1;
 		}

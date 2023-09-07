@@ -1,8 +1,10 @@
 import React from "react";
 
+import Collapsible from "../Collapsible";
+
 import * as S from "./styles";
+
 import { TableList } from "../../types";
-import { Collapsible } from "../Collapsible";
 
 type TableProps = {
 	title: string;

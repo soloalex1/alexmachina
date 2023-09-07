@@ -2,13 +2,14 @@ import React, { useState, useEffect, useRef } from "react";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 
 import * as S from "./styles";
+
 import { TableList } from "../../types";
 
 type CollapsibleProps = {
 	entry: TableList;
 };
 
-export const Collapsible = ({
+const Collapsible = ({
 	entry: { label, link, description, location },
 }: CollapsibleProps) => {
 	const contentRef = useRef(null);
@@ -49,3 +50,5 @@ export const Collapsible = ({
 		</section>
 	);
 };
+
+export default Collapsible;

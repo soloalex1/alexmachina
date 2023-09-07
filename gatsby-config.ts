@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
 	siteMetadata: {
 		title: `Alexandre Machado`,
-		siteUrl: `https://www.yourdomain.tld`,
+		siteUrl: `https://alexmachina.vercel.app/`,
 	},
 	graphqlTypegen: true,
 	plugins: [

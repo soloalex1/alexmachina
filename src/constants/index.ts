@@ -2,7 +2,7 @@ import { TableList } from "../types";
 
 export const EXPERIENCE_ITEMS: TableList[] = [
 	{
-		label: "front-end analyst",
+		label: "junior front-end analyst",
 		location: "agenda edu",
 		link: "https://agendaedu.com/",
 		description:
@@ -31,14 +31,16 @@ export const EXPERIENCE_ITEMS: TableList[] = [
 	},
 	{
 		label: "student",
-		location: "federal university of ceará",
+		location: "federal university of Ceará",
 		link: "https://ufc.br/",
 	},
 ];
 
 export const PRESENT_ITEMS: TableList[] = [
 	{
-		label: "open to remote work",
+		label: "software engineer",
+		location: "somapay digital bank",
+		link: "https://somapay.com.br/",
 	},
 ];
 
@@ -70,11 +72,12 @@ export const STACK_ITEMS: TableList[] = [
 	{
 		label: "i have good knowledge on:",
 		description:
-			"redux/saga, jest, testing library, gatsby, a11y, tdd, component libraries (such as bootstrap, mui & ant), sql",
+			"redux/saga, jest, testing library, vitest, gatsby, a11y, tdd, component libraries (such as bootstrap, mui & ant), sql, zustand, vite",
 	},
 	{
 		label: "with some help, i can manage:",
-		description: "node, express, java, angular, mongodb, ux design",
+		description:
+			"node, express, java, angular, react native, mongodb, ux design",
 	},
 ];
 

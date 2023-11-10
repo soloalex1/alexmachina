@@ -2,7 +2,7 @@ import React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 
 import Header from "../components/Header";
-import Table from "../components/Table";
+import Table from "../components/Section";
 import MainContainer from "../components/MainContainer";
 
 import GlobalStyle from "../globalStyles";
@@ -35,6 +35,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export const Head: HeadFC = () => (
 	<>
+		<html lang="en"></html>
 		<title>Alexandre Machado</title>
 		<meta charSet="UTF-8" />
 		<meta name="author" content="Alexandre Machado" />

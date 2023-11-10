@@ -6,20 +6,22 @@ import * as S from "./styles";
 
 import { TableList } from "../../types";
 
-type TableProps = {
+type SectionProps = {
 	title: string;
 	list: TableList[];
 };
 
-const Table = ({ title, list }: TableProps) => {
+const Section = ({ title, list }: SectionProps) => {
+	const label = title.replace(/\s/g, "").toLowerCase()
+
 	return (
-		<S.TableContainer>
-			<h3>{title}</h3>
+		<S.SectionContainer aria-labelledby={label}>
+			<h2 id={label}>{title}</h2>
 			{list.map((entry) => (
 				<Collapsible entry={entry} />
 			))}
-		</S.TableContainer>
+		</S.SectionContainer>
 	);
 };
 
-export default Table;
+export default Section;

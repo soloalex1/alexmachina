@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../constants/breakpoints";
 
 export const Main = styled.div`
 	display: grid;
@@ -9,11 +10,11 @@ export const Main = styled.div`
 		cursor: default;
 
 		display: grid;
-		grid-template-columns: 1fr 1fr 30ch;
 		gap: 0 24px;
+		grid-template-columns: 1fr;
 
-		@media screen and (max-width: 480px) {
-			grid-template-columns: 1fr;
+		@media (min-width: ${breakpoints.desktopMD}) {
+			grid-template-columns: 1fr 1fr 30ch;
 		}
 
 		> header {

@@ -12,9 +12,12 @@ type TableProps = {
 };
 
 const Table = ({ title, list }: TableProps) => {
+
+	const label = `${title.replace(/\s/g, "").toLowerCase()}-section`;
+
 	return (
-		<S.TableContainer>
-			<h3>{title}</h3>
+		<S.TableContainer aria-labelledby={label}>
+			<h2 id={label}>{title}</h2>
 			{list.map((entry) => (
 				<Collapsible entry={entry} />
 			))}

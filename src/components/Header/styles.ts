@@ -20,7 +20,7 @@ export const HeaderContainer = styled.header`
 		}
 	}
 
-	aside {
+	nav {
 		height: 100%;
 		display: flex;
 		flex-flow: column nowrap;
@@ -30,6 +30,7 @@ export const HeaderContainer = styled.header`
 		> * {
 			margin: 4px 0;
 			font-weight: 500;
+			font-size: 0.75rem;
 		}
 	}
 `;

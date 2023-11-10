@@ -35,6 +35,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export const Head: HeadFC = () => (
 	<>
+		<html lang="en"/>
 		<title>Alexandre Machado</title>
 		<meta charSet="UTF-8" />
 		<meta name="author" content="Alexandre Machado" />

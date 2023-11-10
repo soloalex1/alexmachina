@@ -16,9 +16,5 @@ export const Main = styled.div`
 		@media (min-width: ${breakpoints.desktopMD}) {
 			grid-template-columns: 1fr 1fr 30ch;
 		}
-
-		> header {
-			grid-column: 1 / -1;
-		}
 	}
 `;

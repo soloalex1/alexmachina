@@ -19,9 +19,9 @@ const IndexPage: React.FC<PageProps> = () => {
 	return (
 		<>
 			<GlobalStyle />
+			<Header />
 			<MainContainer>
 				<main>
-					<Header />
 					<Table title="about me" list={DESCRIPTION_ITEMS} />
 					<Table title="experience" list={EXPERIENCE_ITEMS} />
 					<Table title="stack" list={STACK_ITEMS} />

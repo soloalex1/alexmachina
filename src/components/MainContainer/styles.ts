@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import breakpoints from "../../constants/breakpoints";
 
-export const Main = styled.div`
+export const Main = styled.main`
 	display: grid;
 	grid-template-columns: 1fr min(120ch, 100%) 1fr;
 
-	main {
+	> div {
 		grid-column: 2;
 		cursor: default;
 

@@ -19,15 +19,15 @@ const IndexPage: React.FC<PageProps> = () => {
 	return (
 		<>
 			<GlobalStyle />
+			<Header />
 			<MainContainer>
-				<main>
-					<Header />
+				<div>
 					<Table title="about me" list={DESCRIPTION_ITEMS} />
 					<Table title="experience" list={EXPERIENCE_ITEMS} />
 					<Table title="stack" list={STACK_ITEMS} />
 					<Table title="projects" list={PROJECT_ITEMS} />
 					<Table title="present" list={PRESENT_ITEMS} />
-				</main>
+				</div>
 			</MainContainer>
 		</>
 	);

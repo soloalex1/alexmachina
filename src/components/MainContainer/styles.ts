@@ -1,23 +1,20 @@
 import styled from "styled-components";
+import breakpoints from "../../constants/breakpoints";
 
-export const Main = styled.div`
+export const Main = styled.main`
 	display: grid;
 	grid-template-columns: 1fr min(120ch, 100%) 1fr;
 
-	main {
+	> div {
 		grid-column: 2;
 		cursor: default;
 
 		display: grid;
-		grid-template-columns: 1fr 1fr 30ch;
 		gap: 0 24px;
+		grid-template-columns: 1fr;
 
-		@media screen and (max-width: 480px) {
-			grid-template-columns: 1fr;
-		}
-
-		> header {
-			grid-column: 1 / -1;
+		@media (min-width: ${breakpoints.desktopMD}) {
+			grid-template-columns: 1fr 1fr 30ch;
 		}
 	}
 `;

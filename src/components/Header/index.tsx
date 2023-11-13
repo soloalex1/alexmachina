@@ -7,7 +7,7 @@ const Header: React.FC = () => {
 		<S.HeaderContainer>
 			<div>
 				<h1>Alexandre Machado</h1>
-				<nav>
+				<nav aria-label="Contact">
 					<p>amch.smd@gmail.com</p>
 					<p>
 						<a href="https://github.com/soloalex1" target="_blank">

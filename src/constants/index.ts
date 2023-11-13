@@ -72,12 +72,12 @@ export const STACK_ITEMS: TableList[] = [
 	{
 		label: "i have good knowledge on:",
 		description:
-			"redux/saga, jest, testing library, vitest, gatsby, a11y, tdd, component libraries (such as bootstrap, mui & ant), sql, zustand, vite",
+			"react native, redux/saga, jest, testing library, vitest, gatsby, a11y, tdd, component libraries (such as bootstrap, mui & ant), sql, zustand, vite",
 	},
 	{
 		label: "with some help, i can manage:",
 		description:
-			"node, express, java, angular, react native, mongodb, ux design",
+			"node, express, java, angular, mongodb, ux design",
 	},
 ];
 

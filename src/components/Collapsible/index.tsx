@@ -10,11 +10,11 @@ type CollapsibleProps = {
 };
 
 const Collapsible = ({
-	entry: { label, link, description, location },
+	entry: { label, link, description, location, expanded },
 }: CollapsibleProps) => {
 
 	return (
-		<S.Details description={description}>
+		<S.Details description={description} open={expanded}>
 			<summary>
 				{label}
 				{location && link && (

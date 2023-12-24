@@ -47,18 +47,18 @@ export const PRESENT_ITEMS: TableList[] = [
 export const DESCRIPTION_ITEMS: TableList[] = [
 	{
 		label:
-			"i model and build simple, safe and mantainable components and systems",
+			"i model and build simple, accessible and mantainable components and systems",
 	},
 	{
 		label:
-			"i work as a front-end developer who has a strong graphic & ui design knowledge",
+			"i work as a front-end developer who has a strong product and design knowledge",
 	},
 	{
 		label:
-			"i have great attention to detail when it comes to implementing layouts and enforcing design system rules",
+			"i have great attention to detail when it comes to implementing layouts, enforcing acessibility and design system rules",
 	},
 	{
-		label: "i love to study all things about css and its ecosystem",
+		label: "i love to study and stay up-to-date about all things about css and its ecosystem",
 	},
 ];
 
@@ -66,7 +66,7 @@ export const STACK_ITEMS: TableList[] = [
 	{
 		label: "most confident with:",
 		description:
-			"javascript, typescript, react, redux, testing-library, css and most of its frameworks, prototyping tools",
+			"javascript, typescript, react, redux, testing library, css and most of its frameworks, prototyping tools",
 		expanded: true,
 	},
 	{

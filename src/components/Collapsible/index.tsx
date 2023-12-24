@@ -13,18 +13,27 @@ const Collapsible = ({
 	entry: { label, link, description, location, expanded },
 }: CollapsibleProps) => {
 
-	return (
-		<S.Details description={description} open={expanded}>
+	return description ? (
+		<S.Details open={expanded}>
 			<summary>
-				{label}
+				<h3>{label}</h3>
 				{location && link && (
 					<a href={link} target="_blank">
 						{location}
 					</a>
 				)}
 			</summary>
-			<p>{description}</p>
+			<p tabIndex={0}>{description}</p>
 		</S.Details>
+	) : (
+		<S.Description role="group" tabIndex={0}>
+			<h3>{label}</h3>
+			{location && link && (
+				<a href={link} target="_blank">
+					{location}
+				</a>
+			)}
+		</S.Description>
 	);
 };
 

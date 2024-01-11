@@ -58,26 +58,27 @@ export const DESCRIPTION_ITEMS: TableList[] = [
 			"i have great attention to detail when it comes to implementing layouts, enforcing acessibility and design system rules",
 	},
 	{
-		label: "i love to study and stay up-to-date about all things about css and its ecosystem",
+		label:
+			"i love to study and stay up-to-date about all things about css and its ecosystem",
 	},
 ];
 
 export const STACK_ITEMS: TableList[] = [
 	{
-		label: "most confident with:",
+		label: "my strengths are:",
 		description:
-			"javascript, typescript, react, redux, testing library, css and most of its frameworks, prototyping tools",
+			"javascript-based frameworks and libraries (particularly react), css and its frameworks and preprocessors (with focus on sass, styled components and tailwind), design systems and prototyping tools (mostly Figma and Adobe XD), accessibility, testing utilities (mostly jest, enzyme and testing-library)",
 		expanded: true,
 	},
 	{
-		label: "i have good knowledge on:",
+		label: "i have affinity and good knowledge on:",
 		description:
-			"react native, redux/saga, jest, testing library, vitest, gatsby, a11y, tdd, component libraries (such as bootstrap, mui & ant), sql, zustand, vite",
+			"react native, static site generation (with focus on gatsby) state managers (with focus on redux/saga and zustand), front-end tooling (such as vite and babel),  ux/ui design, accessibility, tdd, component libraries (such as bootstrap, radix, mui & ant)",
 	},
 	{
-		label: "with some help, i can manage:",
+		label: "i can lend a hand on:",
 		description:
-			"node, express, java, angular, mongodb, ux design",
+			"backend with node (and express), java, angular, database structures, ux design",
 	},
 ];
 

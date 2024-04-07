@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 
 import Collapsible from "../Collapsible";
 
@@ -12,13 +12,28 @@ type SectionProps = {
 };
 
 const Section = ({ title, list }: SectionProps) => {
-	const label = title.replace(/\s/g, "").toLowerCase()
+	const label = title.replace(/\s/g, "").toLowerCase();
+
+	const [widgetList, setWidgetList] = useState(list);
+
+	const handleAccordionClick = useCallback((entry: string) => {
+		console.log(entry);
+		const newList = widgetList.map((item) =>
+			item.label !== entry ? { ...item, expanded: false } : item
+		);
+
+		setWidgetList(newList);
+	}, []);
 
 	return (
-		<S.SectionContainer aria-labelledby={label}>
+		<S.SectionContainer aria-labelledby={label} data-accordion>
 			<h2 id={label}>{title}</h2>
-			{list.map((entry) => (
-				<Collapsible entry={entry} />
+			{widgetList.map((entry) => (
+				<Collapsible
+					onOpen={handleAccordionClick}
+					key={entry.label}
+					entry={entry}
+				/>
 			))}
 		</S.SectionContainer>
 	);

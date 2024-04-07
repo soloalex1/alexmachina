@@ -1,39 +1,35 @@
 import React from "react";
 
-import * as S from "./styles";
-
 import { TableList } from "../../types";
 
 type CollapsibleProps = {
 	entry: TableList;
-	onOpen(entry: string): void;
 };
 
 const Collapsible = ({
 	entry: { label, link, description, location, expanded },
-	onOpen,
 }: CollapsibleProps) => {
 	return description ? (
-		<S.Details open={expanded}>
-			<summary onClick={() => onOpen(label)}>
-				<h3>{label}</h3>
+		<details open={expanded} className="py-2">
+			<summary>
+				<h3 className="inline">{label}</h3>
 				{location && link && (
-					<a href={link} target="_blank">
+					<a href={link} target="_blank" className="float-right underline">
 						{location}
 					</a>
 				)}
 			</summary>
 			<p>{description}</p>
-		</S.Details>
+		</details>
 	) : (
-		<S.Description role="group">
-			<h3>{label}</h3>
+		<div role="group" className="py-2 flex items-center justify-between">
+			<h3 className="inline">{label}</h3>
 			{location && link && (
-				<a href={link} target="_blank">
+				<a href={link} target="_blank" className="underline">
 					{location}
 				</a>
 			)}
-		</S.Description>
+		</div>
 	);
 };
 

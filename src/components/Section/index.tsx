@@ -14,7 +14,7 @@ const Section = ({ title, list }: SectionProps) => {
 
 	return (
 		<section aria-labelledby={label} data-accordion className="px-6 lg:px-0">
-			<h2 id={label} className="text-xl">
+			<h2 id={label} className="text-xl my-4 font-bold">
 				{title}
 			</h2>
 			{list.map((entry) => (

@@ -11,8 +11,12 @@ const Header: React.FC = () => (
 				className="h-full flex justify-center items-end flex-nowrap flex-col"
 			>
 				<p className="my-1 font-medium text-xs">amch.smd@gmail.com</p>
-				<p className="my-1 font-medium text-xs underline">
-					<a href="https://github.com/soloalex1" target="_blank">
+				<p className="">
+					<a
+						href="https://github.com/soloalex1"
+						target="_blank"
+						className="link text-xs font-bold underline"
+					>
 						github.com/soloalex1
 					</a>
 				</p>

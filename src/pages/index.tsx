@@ -5,8 +5,6 @@ import Header from "../components/Header";
 import Section from "../components/Section";
 import MainContainer from "../components/MainContainer";
 
-import GlobalStyle from "../globalStyles";
-
 import {
 	DESCRIPTION_ITEMS,
 	EXPERIENCE_ITEMS,
@@ -18,7 +16,7 @@ import {
 const IndexPage: React.FC<PageProps> = () => {
 	return (
 		<>
-			<GlobalStyle />
+			{/* <GlobalStyle /> */}
 			<Header />
 			<MainContainer>
 				<Section title="about me" list={DESCRIPTION_ITEMS} />

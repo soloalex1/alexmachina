@@ -72,7 +72,7 @@ export const STACK_ITEMS: TableList[] = [
 		label: "my strengths are:",
 		description:
 			"javascript-based frameworks and libraries (particularly react), css and its frameworks and preprocessors (with focus on sass, styled components and tailwind), design systems and prototyping tools (mostly Figma and Adobe XD), accessibility, testing utilities (mostly jest, enzyme and testing-library)",
-		expanded: true,
+		expanded: false,
 	},
 	{
 		label: "i have affinity and good knowledge on:",

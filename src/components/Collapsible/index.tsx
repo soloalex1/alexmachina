@@ -14,18 +14,18 @@ const Collapsible = ({
 			<summary>
 				<h3 className="inline">{label}</h3>
 				{location && link && (
-					<a href={link} target="_blank" className="float-right underline">
+					<a href={link} target="_blank" className="float-right link">
 						{location}
 					</a>
 				)}
 			</summary>
-			<p>{description}</p>
+			<p className="my-4">{description}</p>
 		</details>
 	) : (
 		<div role="group" className="py-2 flex items-center justify-between">
 			<h3 className="inline">{label}</h3>
 			{location && link && (
-				<a href={link} target="_blank" className="underline">
+				<a href={link} target="_blank" className="link">
 					{location}
 				</a>
 			)}

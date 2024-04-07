@@ -7,6 +7,9 @@ module.exports = {
 				main: "1fr min(120ch, 100%) 1fr",
 				responsive: "1fr 1fr 30ch",
 			},
+			fontFamily: {
+				mono: '"IBM Plex Mono", monospace',
+			},
 		},
 	},
 	plugins: [],

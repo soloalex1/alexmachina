@@ -2,4 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap");
+@layer components {
+	html,
+	body {
+		@apply w-dvw h-dvh overflow-x-hidden bg-[#1E1E1E] text-[#EEE] font-mono;
+	}
+
+	p,
+	a {
+		@apply text-xs sm:text-base;
+	}
+
+	.link {
+		@apply visited:text-[#FAF20C] hover:text-[#1E1E1E] hover:bg-[#FAF20C] active:text-[#CDFEAA] active:bg-[#265301] underline;
+		outline: none;
+	}
+}

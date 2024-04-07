@@ -9,6 +9,7 @@ const config: GatsbyConfig = {
 	plugins: [
 		"gatsby-plugin-styled-components",
 		"gatsby-plugin-image",
+		"gatsby-plugin-postcss",
 		{
 			resolve: "gatsby-plugin-manifest",
 			options: {

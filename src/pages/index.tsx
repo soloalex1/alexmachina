@@ -21,13 +21,11 @@ const IndexPage: React.FC<PageProps> = () => {
 			<GlobalStyle />
 			<Header />
 			<MainContainer>
-				<div>
-					<Section title="about me" list={DESCRIPTION_ITEMS} />
-					<Section title="experience" list={EXPERIENCE_ITEMS} />
-					<Section title="stack" list={STACK_ITEMS} />
-					<Section title="projects" list={PROJECT_ITEMS} />
-					<Section title="present" list={PRESENT_ITEMS} />
-				</div>
+				<Section title="about me" list={DESCRIPTION_ITEMS} />
+				<Section title="experience" list={EXPERIENCE_ITEMS} />
+				<Section title="stack" list={STACK_ITEMS} />
+				<Section title="projects" list={PROJECT_ITEMS} />
+				<Section title="present" list={PRESENT_ITEMS} />
 			</MainContainer>
 		</>
 	);

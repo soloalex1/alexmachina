@@ -1,7 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-import { SlArrowDown, SlArrowUp } from "react-icons/sl";
-
-import * as S from "./styles";
+import React from "react";
 
 import { TableList } from "../../types";
 
@@ -12,28 +9,27 @@ type CollapsibleProps = {
 const Collapsible = ({
 	entry: { label, link, description, location, expanded },
 }: CollapsibleProps) => {
-
 	return description ? (
-		<S.Details open={expanded}>
+		<details open={expanded} className="py-2">
 			<summary>
-				<h3>{label}</h3>
+				<h3 className="inline">{label}</h3>
 				{location && link && (
-					<a href={link} target="_blank">
+					<a href={link} target="_blank" className="float-right link">
 						{location}
 					</a>
 				)}
 			</summary>
-			<p tabIndex={0}>{description}</p>
-		</S.Details>
+			<p className="my-4">{description}</p>
+		</details>
 	) : (
-		<S.Description role="group" tabIndex={0}>
-			<h3>{label}</h3>
+		<div role="group" className="py-2 flex items-center justify-between">
+			<h3 className="inline">{label}</h3>
 			{location && link && (
-				<a href={link} target="_blank">
+				<a href={link} target="_blank" className="link">
 					{location}
 				</a>
 			)}
-		</S.Description>
+		</div>
 	);
 };
 

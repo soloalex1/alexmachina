@@ -2,10 +2,8 @@ import React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 
 import Header from "../components/Header";
-import Table from "../components/Section";
+import Section from "../components/Section";
 import MainContainer from "../components/MainContainer";
-
-import GlobalStyle from "../globalStyles";
 
 import {
 	DESCRIPTION_ITEMS,
@@ -18,16 +16,14 @@ import {
 const IndexPage: React.FC<PageProps> = () => {
 	return (
 		<>
-			<GlobalStyle />
+			{/* <GlobalStyle /> */}
 			<Header />
 			<MainContainer>
-				<div>
-					<Table title="about me" list={DESCRIPTION_ITEMS} />
-					<Table title="experience" list={EXPERIENCE_ITEMS} />
-					<Table title="stack" list={STACK_ITEMS} />
-					<Table title="projects" list={PROJECT_ITEMS} />
-					<Table title="present" list={PRESENT_ITEMS} />
-				</div>
+				<Section title="about me" list={DESCRIPTION_ITEMS} />
+				<Section title="experience" list={EXPERIENCE_ITEMS} />
+				<Section title="stack" list={STACK_ITEMS} />
+				<Section title="projects" list={PROJECT_ITEMS} />
+				<Section title="present" list={PRESENT_ITEMS} />
 			</MainContainer>
 		</>
 	);
@@ -41,7 +37,7 @@ export const Head: HeadFC = () => (
 		<meta name="author" content="Alexandre Machado" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Front-end Developer from Brazil." />
-		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
 		<link

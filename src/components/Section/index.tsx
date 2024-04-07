@@ -2,8 +2,6 @@ import React from "react";
 
 import Collapsible from "../Collapsible";
 
-import * as S from "./styles";
-
 import { TableList } from "../../types";
 
 type SectionProps = {
@@ -12,15 +10,17 @@ type SectionProps = {
 };
 
 const Section = ({ title, list }: SectionProps) => {
-	const label = title.replace(/\s/g, "").toLowerCase()
+	const label = title.replace(/\s/g, "").toLowerCase();
 
 	return (
-		<S.SectionContainer aria-labelledby={label}>
-			<h2 id={label}>{title}</h2>
+		<section aria-labelledby={label} data-accordion className="px-6 lg:px-0">
+			<h2 id={label} className="text-xl my-4 font-bold">
+				{title}
+			</h2>
 			{list.map((entry) => (
-				<Collapsible entry={entry} />
+				<Collapsible key={entry.label} entry={entry} />
 			))}
-		</S.SectionContainer>
+		</section>
 	);
 };
 

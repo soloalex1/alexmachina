@@ -20,7 +20,7 @@ const IndexPage: React.FC<PageProps> = () => {
 			<MainContainer>
 				<Section title="about me" list={DESCRIPTION_ITEMS} />
 				<Section title="experience" list={EXPERIENCE_ITEMS} />
-				<Section title="stack" list={STACK_ITEMS} />
+				<Section title="stack" list={STACK_ITEMS} className="row-span-2" />
 				<Section title="projects" list={PROJECT_ITEMS} />
 				<Section title="present" list={PRESENT_ITEMS} />
 			</MainContainer>

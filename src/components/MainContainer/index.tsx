@@ -7,7 +7,7 @@ type ContainerProps = {
 const Container: React.FC<ContainerProps> = ({ children }) => {
 	return (
 		<main className="grid grid-cols-main">
-			<div className="col-start-2 cursor-default grid gap-6 grid-cols-1 lg:grid-cols-responsive">
+			<div className="col-start-2 cursor-default grid gap-6 grid-cols-1 lg:grid-cols-responsive lg:grid-rows-2">
 				{children}
 			</div>
 		</main>

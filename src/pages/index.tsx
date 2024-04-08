@@ -16,7 +16,6 @@ import {
 const IndexPage: React.FC<PageProps> = () => {
 	return (
 		<>
-			{/* <GlobalStyle /> */}
 			<Header />
 			<MainContainer>
 				<Section title="about me" list={DESCRIPTION_ITEMS} />

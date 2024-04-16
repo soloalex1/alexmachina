@@ -6,16 +6,14 @@ export const EXPERIENCE_ITEMS: TableList[] = [
 		location: "agenda edu",
 		link: "https://agendaedu.com/",
 		description:
-			"Worked at maintenance and development of Agenda Edu web platform, mostly implementing new features that positively impacted our school partners, managers and educators alike. As a part of this process, I've developed performatic graphic interfaces that were easy to use and to learn, acting together with our designers and backenders to ensure consistency and satisfaction through our entire usability experience.",
-		expanded: false,
+			"Worked at maintenance and development of Agenda Edu web platform, mostly implementing new features that positively impacted school partners, managers and educators alike. As a part of this process, I've developed performatic graphic interfaces that were easy to use and to learn, acting together with designers and other frontend devs developers to create the company's design system while ensuring consistency and satisfaction through our entire usability experience.",
 	},
 	{
 		label: "front-end developer",
 		location: "statix",
 		link: "https://statix.com.br/",
 		description:
-			"Worked at refining and maintaining legacy web platforms to automate manual workflows of finance and administration, using Angular.js and Java to develop new features and modules. Also developed a few landing pages and digital solutions for external clients using modern tools as React and a few UI-focused libraries such as Material UI, Tailwind and Ant Design.",
-		expanded: false,
+			"Worked at refining and maintaining legacy web platforms to automate manual workflows of finance and business management, using Angular.js and Java to develop new features and modules. Also developed a few landing pages and digital solutions for external clients using modern tools as React and a few UI-focused libraries such as Material UI, Tailwind and Ant Design.",
 	},
 	{
 		label: "front-end development intern",
@@ -23,7 +21,6 @@ export const EXPERIENCE_ITEMS: TableList[] = [
 		link: "https://lme.virtual.ufc.br/",
 		description:
 			"Developing and refining digital educational resources for Virtual University Institute at Federal University of Ceará, using Angular.js as main development framework.",
-		expanded: false,
 	},
 	{
 		label: "web developer",
@@ -31,7 +28,6 @@ export const EXPERIENCE_ITEMS: TableList[] = [
 		link: "http://www.codijr.ufc.br/",
 		description:
 			"Development and maintenance of institutional websites to UFC clients, using Wordpress as the main development and deployment tool.",
-		expanded: false,
 	},
 	{
 		label: "student",
@@ -42,7 +38,7 @@ export const EXPERIENCE_ITEMS: TableList[] = [
 
 export const PRESENT_ITEMS: TableList[] = [
 	{
-		label: "software engineer",
+		label: "mid-level software engineer",
 		location: "somapay digital bank",
 		link: "https://somapay.com.br/",
 	},
@@ -71,20 +67,17 @@ export const STACK_ITEMS: TableList[] = [
 	{
 		label: "my strengths are:",
 		description:
-			"javascript-based frameworks and libraries (particularly react), css and its frameworks and preprocessors (with focus on sass, styled components and tailwind), design systems and prototyping tools (mostly Figma and Adobe XD), accessibility, testing utilities (mostly jest, enzyme and testing-library)",
-		expanded: false,
+			"javascript (with focus on react and typescript), css and its frameworks and preprocessors (with focus on tailwind, styled components and sass), testing utilities (such as jest, vitest and testing-library), ux/ui design, design systems and prototyping tools (mostly Figma and Adobe XD)",
 	},
 	{
 		label: "i have affinity and good knowledge on:",
 		description:
-			"react native, static site generation (with focus on gatsby) state managers (with focus on redux/saga and zustand), front-end tooling (such as vite and babel),  ux/ui design, accessibility, tdd, component libraries (such as bootstrap, radix, mui & ant)",
-		expanded: false,
+			"react native, static site generation (with focus on gatsby), state managers (with focus on redux/saga and zustand), front-end tooling (such as vite and babel), accessibility, component libraries integration (such as shadcn, radix, material & ant)",
 	},
 	{
 		label: "i can lend a hand on:",
 		description:
-			"backend with node (and express), java, angular, database structures, ux design",
-		expanded: false,
+			"node (with express), java, database structures (both relational and non-relational), progressive enhancement",
 	},
 ];
 

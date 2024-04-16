@@ -16,6 +16,7 @@ const Header: React.FC = () => (
 						href="https://github.com/soloalex1"
 						target="_blank"
 						className="link text-xs font-bold underline"
+						aria-label="Link to Alexandre Machado's GitHub page."
 					>
 						github.com/soloalex1
 					</a>

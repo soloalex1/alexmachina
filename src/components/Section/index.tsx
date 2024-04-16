@@ -1,6 +1,11 @@
 import React from "react";
 
-import Collapsible from "../Collapsible";
+import {
+	Accordion,
+	AccordionContent,
+	AccordionItem,
+	AccordionTrigger,
+} from "@/components/ui/accordion";
 
 import { TableList } from "../../types";
 
@@ -22,9 +27,40 @@ const Section = ({ title, list, className }: SectionProps) => {
 			<h2 id={label} className="text-xl my-4 font-bold">
 				{title}
 			</h2>
-			{list.map((entry) => (
-				<Collapsible key={entry.label} entry={entry} />
-			))}
+			<Accordion type="single" collapsible>
+				{list.map(({ label, description, link, location }) =>
+					description ? (
+						<AccordionItem value={label}>
+							<AccordionTrigger>
+								<div
+									role="group"
+									className="py-2 flex items-center justify-between"
+								>
+									<h3 className="inline">{label}</h3>
+									{location && link && (
+										<a href={link} target="_blank" className="link">
+											{location}
+										</a>
+									)}
+								</div>
+							</AccordionTrigger>
+							<AccordionContent>{description}</AccordionContent>
+						</AccordionItem>
+					) : (
+						<div
+							role="group"
+							className="py-2 flex items-center justify-between"
+						>
+							<h3 className="inline">{label}</h3>
+							{location && link && (
+								<a href={link} target="_blank" className="link">
+									{location}
+								</a>
+							)}
+						</div>
+					)
+				)}
+			</Accordion>
 		</section>
 	);
 };

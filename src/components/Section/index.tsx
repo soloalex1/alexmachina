@@ -31,29 +31,29 @@ const Section = ({ title, list, className }: SectionProps) => {
 				{list.map(({ label, description, link, location }) =>
 					description ? (
 						<AccordionItem value={label}>
-							<AccordionTrigger>
-								<div
-									role="group"
-									className="py-2 flex items-center justify-between"
-								>
-									<h3 className="inline">{label}</h3>
-									{location && link && (
-										<a href={link} target="_blank" className="link">
-											{location}
-										</a>
-									)}
-								</div>
+							<AccordionTrigger aria-label={`${label} at ${location}`}>
+								<h3 className="inline mr-auto text-left">{label}</h3>
+								{location && link && (
+									<a href={link} target="_blank" className="link text-sm">
+										{location}
+									</a>
+								)}
 							</AccordionTrigger>
 							<AccordionContent>{description}</AccordionContent>
 						</AccordionItem>
 					) : (
 						<div
 							role="group"
-							className="py-2 flex items-center justify-between"
+							className="flex items-center justify-between py-4"
 						>
-							<h3 className="inline">{label}</h3>
+							<h3 className="inline mr-auto text-left text-sm">{label}</h3>
 							{location && link && (
-								<a href={link} target="_blank" className="link">
+								<a
+									href={link}
+									target="_blank"
+									className="link text-sm"
+									aria-label={`${location} website`}
+								>
 									{location}
 								</a>
 							)}

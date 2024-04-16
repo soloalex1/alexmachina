@@ -5,6 +5,7 @@
 html,
 body {
 	@apply w-dvw h-dvh overflow-x-hidden bg-[#1E1E1E] text-[#EEE] font-mono;
+	scrollbar-gutter: stable both-edges;
 }
 
 p,

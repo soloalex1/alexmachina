@@ -67,17 +67,17 @@ export const STACK_ITEMS: TableList[] = [
 	{
 		label: "my strengths are:",
 		description:
-			"javascript (with focus on react and typescript), css and its frameworks and preprocessors (with focus on tailwind, styled components and sass), testing utilities (such as jest, vitest and testing-library), ux/ui design, design systems and prototyping tools (mostly Figma and Adobe XD)",
+			"javascript (with focus on react and typescript), css and its frameworks and preprocessors (with focus on tailwind, styled components and sass), state managers (with focus on redux/saga and zustand), testing utilities (such as jest, vitest and testing-library), ux/ui design, design systems and prototyping tools (mostly Figma and Adobe XD)",
 	},
 	{
 		label: "i have affinity and good knowledge on:",
 		description:
-			"react native, static site generation (with focus on gatsby), state managers (with focus on redux/saga and zustand), front-end tooling (such as vite and babel), accessibility, component libraries integration (such as shadcn, radix, material & ant)",
+			"accessibility, react native, nextjs, front-end tooling (such as vite and babel), component libraries integration (such as shadcn, radix, material & ant)",
 	},
 	{
 		label: "i can lend a hand on:",
 		description:
-			"node (with express), java, database structures (both relational and non-relational), progressive enhancement",
+			"node, java, database structures (both relational and non-relational), progressive enhancement",
 	},
 ];
 

@@ -10,7 +10,7 @@ const Header: React.FC = () => (
 				aria-label="Contact"
 				className="h-full flex justify-center items-end flex-nowrap flex-col"
 			>
-				<p className="my-1 font-medium text-xs">amch.smd@gmail.com</p>
+				<p className="my-1 font-medium text-xs">alexmachinadev@proton.me</p>
 				<p>
 					<a
 						href="https://github.com/soloalex1"

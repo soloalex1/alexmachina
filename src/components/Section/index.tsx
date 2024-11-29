@@ -34,7 +34,11 @@ const Section = ({ title, list, className }: SectionProps) => {
 							<AccordionTrigger aria-label={`${label} at ${location}`}>
 								<h3 className="inline mr-auto text-left">{label}</h3>
 								{location && link && (
-									<a href={link} target="_blank" className="link text-sm">
+									<a
+										href={link}
+										target="_blank"
+										className="link text-sm text-right"
+									>
 										{location}
 									</a>
 								)}

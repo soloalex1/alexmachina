@@ -5,6 +5,8 @@ export const EXPERIENCE_ITEMS: TableList[] = [
 		label: "mid-level software engineer",
 		location: "somapay",
 		link: "https://somapay.com.br/",
+		description:
+			"Maintained and helped on the evolution of a web platform for a digital bank, refactoring business-focused financial and management features while contributing to new releases and fixes on internal tools.",
 	},
 	{
 		label: "junior front-end developer",
@@ -19,13 +21,6 @@ export const EXPERIENCE_ITEMS: TableList[] = [
 		link: "https://statix.com.br/",
 		description:
 			"Worked at refining and maintaining legacy web platforms to automate manual workflows of finance and business management, using Angular.js and Java to develop new features and modules. Also developed a few landing pages and digital solutions for external clients using modern tools as React and a few UI-focused libraries such as Material UI, Tailwind and Ant Design.",
-	},
-	{
-		label: "front-end development intern",
-		location: "LME",
-		link: "https://lme.virtual.ufc.br/",
-		description:
-			"Developing and refining digital educational resources for Virtual University Institute at Federal University of Ceará, using Angular.js as main development framework.",
 	},
 	{
 		label: "web developer",
@@ -46,6 +41,11 @@ export const PRESENT_ITEMS: TableList[] = [
 		label: "mid-level software engineer",
 		location: "fullstack labs",
 		link: "https://www.fullstack.com/",
+	},
+	{
+		label: "contractor front-end engineer",
+		location: "floqast",
+		link: "https://www.floqast.com/",
 	},
 ];
 

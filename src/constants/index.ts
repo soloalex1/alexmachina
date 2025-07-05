@@ -97,4 +97,9 @@ export const PROJECT_ITEMS: TableList[] = [
 		location: "live",
 		link: "https://lista-filmes-alpha.vercel.app/",
 	},
+	{
+		label: "recursion",
+		location: "live",
+		link: "https://alexmachina.dev",
+	},
 ];

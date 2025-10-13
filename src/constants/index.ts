@@ -47,6 +47,11 @@ export const PRESENT_ITEMS: TableList[] = [
 		location: "floqast",
 		link: "https://www.floqast.com/",
 	},
+	{
+		label: "postgraduate student",
+		location: "puc minas",
+		link: "https://www.pucminas.br/",
+	},
 ];
 
 export const DESCRIPTION_ITEMS: TableList[] = [
@@ -82,7 +87,7 @@ export const STACK_ITEMS: TableList[] = [
 	{
 		label: "i can lend a hand on:",
 		description:
-			"node, java, database structures (both relational and non-relational), progressive enhancement",
+			"node, java, database structures (both relational and non-relational), progressive enhancement, monorepo management",
 	},
 ];
 

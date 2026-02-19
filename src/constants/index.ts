@@ -3,6 +3,17 @@ import { TableList } from "../types";
 export const EXPERIENCE_ITEMS: TableList[] = [
 	{
 		label: "mid-level software engineer",
+		location: "fullstack labs",
+		link: "https://www.fullstack.com/",
+	},
+
+	{
+		label: "contractor front-end engineer",
+		location: "floqast",
+		link: "https://www.floqast.com/",
+	},
+	{
+		label: "mid-level software engineer",
 		location: "somapay",
 		link: "https://somapay.com.br/",
 		description:
@@ -37,16 +48,6 @@ export const EXPERIENCE_ITEMS: TableList[] = [
 ];
 
 export const PRESENT_ITEMS: TableList[] = [
-	{
-		label: "mid-level software engineer",
-		location: "fullstack labs",
-		link: "https://www.fullstack.com/",
-	},
-	{
-		label: "contractor front-end engineer",
-		location: "floqast",
-		link: "https://www.floqast.com/",
-	},
 	{
 		label: "postgraduate student",
 		location: "puc minas",

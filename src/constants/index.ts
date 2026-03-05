@@ -3,12 +3,6 @@ import { TableList } from "../types";
 export const EXPERIENCE_ITEMS: TableList[] = [
 	{
 		label: "mid-level software engineer",
-		location: "fullstack labs",
-		link: "https://www.fullstack.com/",
-	},
-
-	{
-		label: "contractor front-end engineer",
 		location: "floqast",
 		link: "https://www.floqast.com/",
 	},

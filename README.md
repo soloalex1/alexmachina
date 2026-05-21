@@ -1,8 +1,14 @@
 # Website for Alexandre Machado
 
-##### Multifuncional developer/designer based in Fortaleza.
+##### Brazilian frontend engineer and accessibility enthusiast.
 
-## Tech used:
+---
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6958deba-2268-465f-9ecf-a9f8472cbc3c/deploy-status)](https://app.netlify.com/projects/alexmachina/deploys)
+
+---
+
+## Stack:
 
 - React
 - TypeScript

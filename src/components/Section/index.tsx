@@ -30,7 +30,7 @@ const Section = ({ title, list, className }: SectionProps) => {
 			<Accordion type="single" collapsible>
 				{list.map(({ label, description, link, location }) =>
 					description ? (
-						<AccordionItem value={label}>
+						<AccordionItem value={location!}>
 							<AccordionTrigger aria-label={`${label} at ${location}`}>
 								<h3 className="inline mr-auto text-left">{label}</h3>
 								{location && link && (
@@ -62,7 +62,7 @@ const Section = ({ title, list, className }: SectionProps) => {
 								</a>
 							)}
 						</div>
-					)
+					),
 				)}
 			</Accordion>
 		</section>

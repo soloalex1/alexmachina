@@ -5,6 +5,8 @@ export const EXPERIENCE_ITEMS: TableList[] = [
 		label: "mid-level software engineer",
 		location: "floqast",
 		link: "https://www.floqast.com/",
+		description:
+			"Developed and documented the component library for the design system of the company's main product, a financial close management platform, while also helping product teams adopt and migrate old modules to the new design standards, accelerating their feature delivery while avoiding code friction on the roadmap goals.",
 	},
 	{
 		label: "mid-level software engineer",

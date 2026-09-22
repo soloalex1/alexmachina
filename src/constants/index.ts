@@ -83,7 +83,7 @@ export const STACK_ITEMS: TableList[] = [
 
 export const PROJECT_ITEMS: TableList[] = [
 	{
-		label: "display",
+		label: "display (pt-br)",
 		location: "live",
 		link: "https://display-celula.vercel.app/",
 	},
